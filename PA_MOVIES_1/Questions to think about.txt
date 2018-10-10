@@ -1,0 +1,15 @@
+
+Describe an algorithm to predict the ranking that a user U would give to a movie M assuming the user hasn’t already ranked the movie in the dataset.
+    Give tags to all movies, create a hash to store these tags,
+    like{movie_1=>[“action”, “comedy”,]}. Create a tag hash of each user,
+    store the rating of movies that watched by the user like {“comedy” => 5, “documentary” => 0}.
+    A movie would have multiple tags,  compare these tags with user’s tags to predict the ranking.
+
+Does your algorithms scale? You dont have to make it scale alot, I just want to see that you have an awareness of whether it does or does not, and why,
+    Yes it’s scaled. At first, every time initialize the User object
+    the program read the user.data file, this made my program run really slow .
+    I fixed this by creating a hash list of object of all Users that only read the user.data file one time,
+    this allowed my program to process all the data without a second.
+
+What factors determine the execution time of your “most_similar” and “popularity_list
+    I think is the process to create User objects of every user and store data into the User’s @movie_data variable

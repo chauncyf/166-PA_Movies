@@ -1,0 +1,110 @@
+>>data = MovieData.new
+
+>>data.popularity(1)
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+the popularity of movie 1 is 3.8783185840707963
+
+>>data.popularity(55)
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+the popularity of movie 55 is 3.704697986577181
+
+>>data.popularity(457)
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+the popularity of movie 457 is 1.7407407407407407
+Chauncys-MBP:PA_MOVIES_1 chauncy$
+
+>>data.popularity_list(15)
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+ID of the most popular 15 movies are:
+465
+1014
+222
+387
+95
+234
+603
+327
+201
+1137
+241
+4
+181
+196
+143
+423
+
+>>puts data.similarity('1', '2')
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+0.8111111111111111
+
+>>puts data.similarity('123', '456')
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+0.823076923076923
+
+>>puts data.similarity('222', '333')
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+0.85
+
+>>data.most_similar('1')
+
+Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+These are similarity list of user1
+
+ user 812 => similarity 1.0
+ user 876 => similarity 0.9428571428571428
+ user 105 => similarity 0.9142857142857143
+ user 895 => similarity 0.9
+ user 800 => similarity 0.8923076923076924
+ user 237 => similarity 0.8923076923076922
+ user 803 => similarity 0.8888888888888888
+ user 53 => similarity 0.8842105263157894
+ user 359 => similarity 0.8833333333333333
+ user 842 => similarity 0.88
+ user 117 => similarity 0.8790697674418605
+ user 549 => similarity 0.8769230769230769
+ user 8 => similarity 0.8764705882352941
+ user 226 => similarity 0.875
+ user 923 => similarity 0.8727272727272727
+ user 60 => similarity 0.8719101123595506
+ user 344 => similarity 0.8714285714285714
+ user 473 => similarity 0.8705882352941177
+ user 664 => similarity 0.8691358024691358
+ user 600 => similarity 0.8682926829268292
+ user 785 => similarity 0.8666666666666667
+ user 476 => similarity 0.8666666666666666
+ user 315 => similarity 0.8652173913043477
+ user 540 => similarity 0.8642857142857142
+ user 770 => similarity 0.864
+ user 413 => similarity 0.8636363636363636
+ user 776 => similarity 0.8634146341463415
+ user 136 => similarity 0.8631578947368421
+ user 794 => similarity 0.8608695652173913
+ user 941 => similarity 0.86
+ user 138 => similarity 0.8592592592592592
+
+ 
+>> data.most_similar('456')
+
+ Chauncys-MBP:PA_MOVIES_1 chauncy$ ruby MovieData.rb
+ These are similarity list of user456
+
+  user 813 => similarity 1.0
+  user 146 => similarity 0.95
+  user 842 => similarity 0.9333333333333333
+  user 573 => similarity 0.9238095238095239
+  user 237 => similarity 0.9217391304347826
+  user 47 => similarity 0.92
+  user 412 => similarity 0.9181818181818182
+  user 783 => similarity 0.9
+  user 595 => similarity 0.8975609756097561
+  user 139 => similarity 0.8888888888888888
+  user 723 => similarity 0.8833333333333333
+  user 415 => similarity 0.88
+  user 931 => similarity 0.8769230769230769
+  user 329 => similarity 0.8761904761904762
+  user 748 => similarity 0.8759999999999999
+  user 765 => similarity 0.875
+  user 766 => similarity 0.8743589743589744
+  user 32 => similarity 0.8727272727272728
+  user 453 => similarity 0.8707692307692307
+  user 666 => similarity 0.8697674418604652
