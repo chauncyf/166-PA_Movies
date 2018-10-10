@@ -1,21 +1,21 @@
 # Readme
 
-##Algorithm
+## Algorithm
 My prediction use u1.base as train data, and get the popularity of each movie.
 when a movie is not ranked, give the movie a 4 ranking, 4 works really well I
 think it's because that people are not always very picky, and 4 is the rank that
 people are trend to give.
 
-##Analysis
+## Analysis
 I use the validate method to determine the accuracy of my method. I got nearly 
 13000 correct predict out of 20000, which is about 65% precision.  
 
-##Benchmarking
+## Benchmarking
 It cost about 0.536607 sec to run a prediction. I think the time will increased
 by 10 or 100 if I increase the size of training set by a factor of 10 or 100.   
 Because I think the complexity of my algorithm is O(n).
 
-##Reflection
+## Reflection
 Since I did not learnt machine learning before, I spent a lot of
 time to figure out how to use machine learning to solve this problem.
 
